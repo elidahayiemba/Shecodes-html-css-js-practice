@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Explorer 🌎</title>
+    <style>
+        body{
+            background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0.1%, rgb(252, 251, 121) 90%);
+        }
+
+        h1{
+            text-align: center;
+            color: rgb(29, 83, 29); 
+            text-transform: uppercase;  
+        }
+
+        h2{
+            text-align: center;
+            font-size: 30px;
+            border: 2px solid green;
+            border-radius: 8px;
+            color: rgb(255, 255, 255);
+            padding: 12px;
+            width: 470px;
+            margin-left: 420px;
+
+        }
+
+        img{
+            margin: 0 auto;
+            display: block;
+            border-radius: 8px;
+            
+        }
+
+        p{
+            line-height: 24px;
+            font-size: 20px;
+            margin-left: 410px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .safari{
+            display: block;
+            font-size: 20px;           
+            margin-left: 410px;
+            color: green;
+        }
+        .safari:hover{
+            text-decoration: underline;
+            
+        }
+
+        button{
+            display: block;
+            margin: 20px auto;
+            color: white;
+            background:rgb(29, 83, 29) ;
+            border: none;
+            font-size: 20px;
+            padding: 15px 25px;
+            border-radius: 8px;
+            transition: all 150ms ease-in-out;
+            box-shadow: 5px 5px 8px rgb(0, 0, 0, 0.2);
+        }
+
+        button:hover{
+            cursor: pointer;
+            opacity: 0.7;
+            text-decoration: underline;
+        }
+        .ayiemba{
+            font-size: 18px;
+            margin-left: 550px;
+        }
+        .container{
+            margin: 0 auto;
+        }
+        span{
+            color: green;
+        }
+        hr{
+            width: 500px;
+            height: 2px;
+            background: black;
+        }
+              
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1> African Explorer Travels</h1>
+    <h2>The <span>U</span>ltimate <span>S</span>afari <span>T</span>ravels</h2>
+    <hr>
+
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/965/original/safari_image.jpg?1676117036" alt="" width="500px">
+
+    <hr> 
+    <p>
+        African explorer travels is safari destination organization<br> that offers incredible natural beauty, 
+        soul-stirring cultural <br>encounters, sensational game viewing and, of course, 
+        the thrills <br>and spills of the <strong>Wildbeest Migration</strong>. No wonder Africa <br>is the birthplace of safari travels!.
+        Seeing the wildebeest<br> mega-herds in the Masai Mara and Amboseli’s 
+        legendary <br>elephant herds against the backdrop of Mount Kilimanjaro <br>to cultural encounters 
+        in Samburu, a Kenya safari will not <br>disappoint. Plus, you can effortlessly combine our Kenya<br>
+        safari tours with <strong>gorilla-trekking adventures</strong> in Uganda or <br>Rwanda, or even
+        a tropical beach holiday overlooking the turquoise <br>waters and fluttering 
+        palm trees of the warm Indian Ocean.
+    </p>
+    <a href="https://safarisafricana.com/destinations/" target="_blank" class="safari"><em>Learn More About Safaris</em></a>
+
+    <button>Get In Touch</button>
+    <p class="ayiemba">This page was built by <a href="#" target="_blank">Elidah Ayiemba</a></p>
+</div>
+    
+    <script>
+        function destination(){
+            let name = prompt("What are your full names?");
+            let email = prompt("Provide us with your email address");
+
+            alert(" Dear," + name + " we will be in touch soon via email!")            
+        }
+
+        let safari = document.querySelector("button");
+        safari.addEventListener("click", destination);
+    </script>
+</body>
+</html>
